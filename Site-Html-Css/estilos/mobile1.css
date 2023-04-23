@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(-45deg,rgba(1, 1, 1, 0.916),white 400%) ;
+   /* background-size:100000%;
+    animation: fundo 6s infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.100,.100,.100,.100);*/
+    }
+    h1{
+        margin: auto;
+        text-align: center;
+        font-weight: lighter;
+        color: white;
+        font-size: 1.5em;
+        padding-top: 30px;
+        width: 90%;
+        
+    }
+    div.Front-End >a{
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        overflow: hidden;
+        border: 1px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%,-30%);
+    }
+    
+    div.Front-End >a:hover{
+        color: black;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+       
+    }
+    div.Back-End >a{
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        overflow: hidden;
+        border: 1px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%,-30%);
+    }
+    div.Back-End >a:hover{
+        color: black;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    footer{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 96.8%;
+        background-color:  rgba(0, 0, 0, 0.919);
+    }
+    footer >p{
+        font-size: small;
+        color: white;
+        text-align: center;
+        padding: 3px;
+    }
+    @keyframes fundo{
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        
+        }
+        75%{
+            background-position: 0 50%;
+        }
+        100%{
+            background-position: 100% 50%;
+        }
+    }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.856);
+        }
+        div{
+            color: white;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px; 
+
+        }
+        .total{
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .total::after{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            animation: efeito 1.5s ease forwards;
+        }
+        .javascript{
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        .html{
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+             overflow: hidden;
+        }
+        .css{
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            margin: 0px;
+        }
+        .javascript:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .html:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .css:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            transition: 1s;
+            cursor: pointer;
+        }
+       /* .javascript::after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            animation: efeito 1.5s ease forwards;
+            
+        }
+       .html::after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            animation: efeito 1.5s ease forwards;
+            
+        }
+        .css::after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            animation: efeito 1.5s ease forwards;
+            
+        }*/
+        @keyframes efeito{
+            0%{
+                transform: translatex(-100%);
+            }
+            100%{
+                transform: translatex(100%);
+            }
+        }
+        p{
+            opacity: 0;
+            animation: opacidade 1s 1s forwards;
+        }
+        @keyframes opacidade{
+            100%{
+                opacity: 1;
+            }
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+<div class="total">
+    <div class="javascript"><p><a href="Java-script/index.html" target="_self">Javascrypt</a></p></div>
+    <div class="html"><p><a href="html/index.html" target="_self">Html</a></p></div>
+    <div class="css"><p><a href="css/index.html" target="_self">Css</a></p></div>
+</div>
+</body>
+</html>
