@@ -42,22 +42,45 @@
             animation: efeito 1.5s ease forwards;
         }
         .javascript{
+            border-radius: 5px;
+            outline: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.159);
             display: inline-block;
             margin: 0px;
             position: relative;
             overflow: hidden;
+            opacity: 0;
+            animation: opacidadejshtmlcss 1s 1s forwards;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.242);
         }
         .html{
+            border-radius: 5px;
+            outline: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.159);
             display: inline-block;
             margin: 0px;
+            margin-left: 0px;
             position: relative;
              overflow: hidden;
+             opacity: 0;
+            animation: opacidadejshtmlcss 1s 1s forwards;
+            width: 60px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.242);
         }
         .css{
+            border-radius: 5px;
+            outline: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.159);
             display: inline-block;
             position: relative;
             overflow: hidden;
             margin: 0px;
+            opacity: 0;
+            animation: opacidadejshtmlcss 1s 1s forwards;
+            width: 60px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.242);
         }
         .javascript:hover{
             background-color: white;
@@ -126,6 +149,11 @@
             animation: opacidade 1s 1s forwards;
         }
         @keyframes opacidade{
+            100%{
+                opacity: 1;
+            }
+        }
+            @keyframes opacidadejshtmlcss{
             100%{
                 opacity: 1;
             }
